@@ -2,18 +2,18 @@
 
   <PropertyGroup>
     <RootNamespace>FunctionalExtensions</RootNamespace>
-    <TargetFramework>netstandard1.0</TargetFramework>
-    <Version>0.0.3</Version>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Version>0.0.4</Version>
     <PackageId>VisualBasicFunctionalExtensions</PackageId>
     <Authors>Justin Kasteleijn, Nadia Alrayes</Authors>
     <Company />
-    <Description>A small functional library for Visual Basic .Net 2.1. For now not concerned with performance so the overhead can be excessive in performance critical applications. All functions have been tested.</Description>
+    <Description>A small functional library for Visual Basic .Net Standard 2.0. For now not concerned with performance so the overhead can be excessive in performance critical applications. All functions have been tested.</Description>
     <Copyright>Copyright (c) &lt;JustinKasteleijn&gt; &lt;2024&gt;</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl>https://github.com/JustinKasteleijn/FunctionalExtensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>Functional, Visual Basic, VB, Result, Maybe, Rust</PackageTags>
-    <PackageReleaseNotes>Target now .Net Standard 1.0 to support more frameworks. Had to remove serializable from the exceptions so take this into account. Detailed readme and more functionality will be added in future releases.</PackageReleaseNotes>
+    <PackageTags>Functional, Visual Basic, VB, Result, Maybe, Rust, VisualBasic, Monad</PackageTags>
+    <PackageReleaseNotes>Target now .Net Standard 2.0 to remove the huge dependency pool</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
      <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
