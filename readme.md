@@ -1,20 +1,20 @@
 # VisualBasicFunctionalExtensions
 
 **Package ID:** VisualBasicFunctionalExtensions  
-**Version:** 0.0.3  
+**Version:** 0.0.5
 **Owner:** Justi  
 **License:** MIT
 
 ## Overview
 
-VisualBasicFunctionalExtensions is a functional library for Visual Basic .NET 2.1, drawing inspiration from Rust's functional programming concepts. The library is designed without a focus on performance, making it suitable for various applications.
+VisualBasicFunctionalExtensions is a functional library for Visual Basic .NET 2.0, drawing inspiration from Rust's functional programming concepts. The library is designed without a focus on performance, making it suitable for various applications.
 
 ## Installation
 
 Install via NuGet Package Manager Console:
 
 ```bash
-dotnet add package VisualBasicFunctionalExtensions --version 0.0.3
+dotnet add package VisualBasicFunctionalExtensions --version 0.0.5
 ```
 
 ## Features

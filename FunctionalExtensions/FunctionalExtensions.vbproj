@@ -3,7 +3,7 @@
   <PropertyGroup>
     <RootNamespace>FunctionalExtensions</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.4</Version>
+    <Version>0.0.5</Version>
     <PackageId>VisualBasicFunctionalExtensions</PackageId>
     <Authors>Justin Kasteleijn, Nadia Alrayes</Authors>
     <Company />
@@ -13,7 +13,7 @@
     <RepositoryUrl>https://github.com/JustinKasteleijn/FunctionalExtensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Functional, Visual Basic, VB, Result, Maybe, Rust, VisualBasic, Monad</PackageTags>
-    <PackageReleaseNotes>Target now .Net Standard 2.0 to remove the huge dependency pool</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Flatten to both Result and Maybe Monads.</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
      <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
