@@ -2,8 +2,6 @@
 
 ## High Priority
 
-- [ ] Implement And for Maybe
-
 ## Medium Priority
 
 ## Low Priority
@@ -20,3 +18,4 @@
 
 - [x] Implement Flatten for Result (1/9/24)
 - [x] Implement Flatten for Maybe (1/9/24)
+- [x] Implement And for Maybe (1/9/24)
