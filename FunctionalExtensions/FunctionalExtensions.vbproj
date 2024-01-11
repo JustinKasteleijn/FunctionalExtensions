@@ -13,7 +13,8 @@
     <RepositoryUrl>https://github.com/JustinKasteleijn/FunctionalExtensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Functional, Visual Basic, VB, Result, Maybe, Rust, VisualBasic, Monad</PackageTags>
-    <PackageReleaseNotes>Added Flatten to both Result and Maybe Monads.</PackageReleaseNotes>
+    <PackageReleaseNotes>Added Flatten to both Result and Maybe Monads. 
+Added And to Maybe Monad</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
      <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>readme.md</PackageReadmeFile>

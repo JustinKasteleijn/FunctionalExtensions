@@ -2,7 +2,7 @@
 Imports Microsoft.VisualStudio.TestTools.UnitTesting
 
 <TestClass>
-Public Class Result
+Public Class FlattenResultTest
 
     <TestMethod>
     Public Sub FlattensSingleLayerOk()
