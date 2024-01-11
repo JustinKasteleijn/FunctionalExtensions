@@ -2,21 +2,21 @@
 Imports Microsoft.VisualStudio.TestTools.UnitTesting
 
 <TestClass>
-Public Class ApplyResultTest
+Public Class ApplyMaybeTest
     <TestMethod>
-    Public Sub ApplyRetunsAppliedIdenticalValues()
+    Public Sub ApplyMaybeReturnsIdenticalValues()
         Dim expected As Integer = 5
-        Dim sut = Result(Of Integer, String).Ok(expected)
+        Dim sut = Maybe(Of Integer).Some(expected)
 
         Assert.AreEqual(expected, sut.Apply(Sub(x) Math.Sqrt(x)).Unwrap())
     End Sub
 
     <TestMethod>
-    Public Sub ApplyResultInvokesMethod()
+    Public Sub ApplyMaybeInvokesMethod()
         Dim testvalue As String = "works!"
         Dim _global As String = "test "
         Dim expected As String = _global & testvalue
-        Dim sut = Result(Of String, String).Ok(testvalue)
+        Dim sut = Maybe(Of String).Some(testvalue)
 
         sut.Apply(Sub(x)
                       _global &= x
@@ -26,11 +26,11 @@ Public Class ApplyResultTest
     End Sub
 
     <TestMethod>
-    Public Sub ApplyResultIgnoresErr()
+    Public Sub ApplyMaybeIgnoresApplyForNone()
         Dim expected As Integer = 5
         Dim testvalue As String = "works!"
         Dim _global As String = "test "
-        Dim sut = Result(Of String, String).Err(testvalue)
+        Dim sut = Maybe(Of String).None()
 
         sut.Apply(Sub(x) _global.Append(x))
 
