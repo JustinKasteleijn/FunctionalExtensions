@@ -3,7 +3,7 @@
   <PropertyGroup>
     <RootNamespace>FunctionalExtensions</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <PackageId>VisualBasicFunctionalExtensions</PackageId>
     <Authors>Justin Kasteleijn, Nadia Alrayes</Authors>
     <Company />
@@ -13,16 +13,35 @@
     <RepositoryUrl>https://github.com/JustinKasteleijn/FunctionalExtensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Functional, Visual Basic, VB, Result, Maybe, Rust, VisualBasic, Monad</PackageTags>
-    <PackageReleaseNotes>Added apply to both Maybe and Result also added logo</PackageReleaseNotes>
+    <PackageReleaseNotes>Added OnErr and OnOk so apply is now starting to become deprecated</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+     <PackageLicenseExpression></PackageLicenseExpression>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
     <PackageIcon>func.png</PackageIcon>
     <PackageIconUrl />
+    <OptionStrict>On</OptionStrict>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <PackageLicenseFile>license.md</PackageLicenseFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn></NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn></NoWarn>
+    <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="..\..\OneDrive\Afbeeldingen\func.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="docs\license.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
