@@ -3,7 +3,7 @@
   <PropertyGroup>
     <RootNamespace>FunctionalExtensions</RootNamespace>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <Version>0.0.5</Version>
+    <Version>1.0.0</Version>
     <PackageId>VisualBasicFunctionalExtensions</PackageId>
     <Authors>Justin Kasteleijn, Nadia Alrayes</Authors>
     <Company />
@@ -13,14 +13,19 @@
     <RepositoryUrl>https://github.com/JustinKasteleijn/FunctionalExtensions</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Functional, Visual Basic, VB, Result, Maybe, Rust, VisualBasic, Monad</PackageTags>
-    <PackageReleaseNotes>Added Flatten to both Result and Maybe Monads. 
-Added And to Maybe Monad</PackageReleaseNotes>
+    <PackageReleaseNotes>Added apply to both Maybe and Result also added logo</PackageReleaseNotes>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
      <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageIcon>func.png</PackageIcon>
+    <PackageIconUrl />
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\OneDrive\Afbeeldingen\func.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
     <None Include="docs\readme.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>
